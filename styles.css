@@ -26,7 +26,9 @@ body {
   border-radius: 30%;
 }
 
-
+.dropbtn span.line {
+  margin-left: 5px;
+}
 
 .line {
   width: 20px;
