@@ -12,10 +12,10 @@ body {
   background-color: white;
   border: 2px solid;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 0;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 11px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,10 +24,6 @@ body {
   height: 35px;
   z-index: 1;
   border-radius: 30%;
-}
-
-.dropbtn span.line {
-  margin-left: 5px;
 }
 
 .line {
@@ -41,8 +37,8 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 5px;
-  top: 38px;
+  right: 11px;
+  top: 45px;
   text-decoration: none;
   background-color: grey;
   opacity: 0.9;
