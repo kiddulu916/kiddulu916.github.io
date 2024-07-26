@@ -7,6 +7,7 @@ body {
   background-size: cover
 }
 
+/* Header */
 /* Navigation Button */
 .dropbtn {
   background-color: white;
@@ -64,53 +65,84 @@ body {
 /* Banner */
 .banner {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: white;
 }
 
-.banner-img {
-  border-bottom: 2px solid black;
+#banner-img {
   width: 100%;
-  height: auto;
-  top: 0;
-  background-color: none;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 5px solid black;
 }
 
 .banner-overlay {
   position: absolute;
-  top: 25%;
-  left: 20%;
-  width: 63%;
-  height: 25%;
-  background-color: rgba(0, 0, 0, 0.55);
-}
-
-.banner-overlay #name {
-  position: absolute;
-  top: 0%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  height: auto;
+  width: auto;
+  max-width: 1200px;
+  padding: 10px;
+  padding-bottom: 0;
+  margin: 10px;
+  border-radius: 20%;
+}
+
+#name {
   font-size: 3em;
   font-weight: bold;
+  margin: 0;
+  text-wrap: wrap;
 }
 
-.banner-overlay #slogan {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#slogan {
+  position: relative;
+  top: -30px;
   font-size: 1.5em;
-  margin-top: 10px;
+  text-wrap: wrap;
 }
 
 /* Main */
-.container {
+.container #main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+#about-img, #services-img, #contact-img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.about, .services, .contact {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  margin: 40px;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .box {
@@ -118,14 +150,14 @@ body {
   border: 3px solid rgb(3, 175, 69);
   padding: 10px;
   width: 50%;
-  margin-left: 25%;
 }
 
-.about-text, .service-text, .contact-text {
+#about-text, #services-text, #contact-text {
+  flex-grow: 1;
   color: white;
   text-align: center;
-  margin: 10px;
-  padding: 10px;
+  font-size: 18px;
+  text-wrap: wrap;
 }
 
 /* Footer */
